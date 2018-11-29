@@ -1,0 +1,99 @@
+
+
+.main{
+  width: 290px;
+  background-color: cornsilk;
+  color: #000;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 4px;
+}
+
+.titleH1, .arrowBtn, p, .timer {
+  margin: 2px;
+  align-self: center;
+}
+.lableP{
+  font-size: 28px;
+}
+
+
+.timer{
+  align-self: center;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+
+
+.btn {
+  font-weight: bold;
+  font-size: 25px;
+  align-self: center;
+  width: 200px;
+  height: 40px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 9px;
+  outline: #00000091 outset;
+  z-index: 5;
+}
+.btn:hover{
+  outline: #fff inset;
+}
+
+.digitField{
+  width: 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.digitSlider {
+  z-index: 1;
+  border-radius: 4px;
+  border-left: solid 4px #000000cc;
+  border-right: solid 4px #00000070;
+  border-top: solid 4px #000000;
+  border-bottom: solid 4px #0000003d;
+  align-self: center;
+  width: 100%;
+  background-color: #000000db;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-box-shadow: 97px 10px 143px -71px rgba(0,0,0,0.75);
+  -moz-box-shadow: 97px 10px 143px -71px rgba(0,0,0,0.75);
+  box-shadow: 28px 0px 86px -16px rgb(0, 0, 0);
+}
+.gradient {
+  position: relative;
+  width: 95%;
+  height: 110%;
+  border-left: 3px #000000a3 solid;
+  border-right: solid 3px black;
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e1ffff+7,000000+7,000000+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,779b98+75,020000+100&1+0,0.28+8,1+32,1+69,0.79+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.37) 7%, rgba(51, 51, 51, 0.28) 8%, rgba(253, 255, 255, 0.4) 12%, rgba(230, 248, 253, 0.94) 30%, rgba(227, 247, 253, 1) 32%, rgba(200, 238, 251, 1) 54%, rgba(142, 179, 180, 1) 69%, rgba(119, 155, 152, 0.96) 75%, rgba(2, 0, 0, 0.79) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.37) 7%, rgba(51, 51, 51, 0.28) 8%, rgba(253, 255, 255, 0.4) 12%, rgba(230, 248, 253, 0.94) 30%, rgba(227, 247, 253, 1) 32%, rgba(200, 238, 251, 1) 54%, rgba(142, 179, 180, 1) 69%, rgba(119, 155, 152, 0.96) 75%, rgba(2, 0, 0, 0.79) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.37) 7%, rgba(51, 51, 51, 0.28) 8%, rgba(253, 255, 255, 0.4) 12%, rgba(230, 248, 253, 0.94) 30%, rgba(227, 247, 253, 1) 32%, rgba(200, 238, 251, 1) 54%, rgba(142, 179, 180, 1) 69%, rgba(119, 155, 152, 0.96) 75%, rgba(2, 0, 0, 0.79) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#c9020000', GradientType=0); /* IE6-9 */
+
+
+}
+
+app-digit{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: -60px;
+  margin: -25px 0px 0px -40px;
+  padding-left: 5px;
+}

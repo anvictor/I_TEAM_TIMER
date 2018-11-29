@@ -1,20 +1,35 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="main">
+  <!--<h5 id="speed"></h5>-->
+  <h1 class="titleH1">I Team Test </h1>
+  <p class="instr">Timer</p>
+  <div class="timer">
+    <div class="digitField">
+      <p class="lableP">hh</p>
+      <div class="digitSlider">
+        <div class="gradient">
+          <app-digit [arr]="this.arrHH" [ngStyle] = "{'top': + this.topHH + 'px'}"></app-digit>
+        </div>
+      </div>
+    </div>
+    <div class="digitField">
+      <p class="lableP">mm</p>
+      <div class="digitSlider">
+        <div class="gradient">
+          <app-digit [arr]="this.arrMM" [ngStyle] = "{'top': + this.topMM + 'px'}"></app-digit>
+        </div>
+      </div>
+    </div>
+    <div class="digitField">
+      <p class="lableP">ss</p>
+      <div class="digitSlider">
+        <div class="gradient">
+          <app-digit [arr]="this.arrSS" [ngStyle] = "{'top': + this.topSS + 'px'}"></app-digit>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="start" (click)="startTimer()" class="btn">START</button>
+  <button id="stop" (click)="stopTimer()" class="btn">STOP</button>
+  <button id="wait" (click)="waitTimer()" class="btn">WAIT</button>
+  <button id="reset" (click)="resetTimer()" class="btn">RESET</button>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
